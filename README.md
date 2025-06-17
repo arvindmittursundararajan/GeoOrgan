@@ -74,49 +74,6 @@ GeoOrgan AI is the world's first open-source geospatial modeling and recommendat
 
 ---
 
-## 🏗️ Architecture (Text Diagram)
-```
-[User/Browser]
-   │
-   ▼
-[Flask App (Python)]
-   │   ├──> [MongoDB Atlas: geospatial, vector, and tabular data]
-   │   ├──> [Google Gemini API: LLM, embeddings, RAG]
-   │   ├──> [Deepgram API: Speech-to-text]
-   │   └──> [Frontend: Bootstrap, Leaflet.js, JS]
-   │
-   ▼
-[Advisor Panels, Map, Voice Chat, RAG Search]
-```
-
----
-
-## ⚡ Quickstart
-1. **Clone the repo:**
-   ```bash
-   git clone <your-repo-url>
-   cd GeoOrgan-AI
-   ```
-2. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Configure environment:**
-   - Set up your Google Cloud and MongoDB Atlas credentials in `config.py`
-4. **Seed the database:**
-   ```bash
-   python seed_guides.py
-   python seed_donors_data.py
-   python seed_flight_data.py
-   # ... (other seed scripts as needed)
-   ```
-5. **Run the app:**
-   ```bash
-   python app.py
-   ```
-6. **Open in browser:**
-   - Go to `http://127.0.0.1:5000` (or your server address)
-
 ---
 
 ## 🧑‍💻 How to Use & Extend
