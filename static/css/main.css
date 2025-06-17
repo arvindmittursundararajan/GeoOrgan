@@ -1,0 +1,74 @@
+/* main.css: global and layout styles extracted from style.css */
+/* ...extract global, layout, navbar, footer, form, modal, and utility classes from style.css... */
+
+/***** GLOBAL & LAYOUT STYLES *****/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+    background: #f9f9f9;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    color: #212529;
+    padding-bottom: 80px; /* space for footer and panels */
+}
+
+#map {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0 !important;
+    background: #e9ecef !important;
+}
+
+footer.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    background: #fff;
+    border-top: 1px solid #eee;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.03);
+}
+
+/***** UTILITY Z-INDEX *****/
+#asset-panel, #alerts-panel, #bottom-tabs, #help-modal-btn {
+    z-index: 1202 !important;
+}
+
+/***** NAVBAR & CONTAINER *****/
+.navbar {
+    background-color: #fff !important;
+    border-bottom: 1px solid #dee2e6;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    z-index: 2000 !important;
+    position: relative;
+}
+.container-fluid {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+}
+
+/***** BUTTONS *****/
+.btn {
+    border-radius: 6px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+/***** Z-ORDER STACKING *****/
+#bottom-tabs, #help-modal-btn {
+    z-index: 1202 !important;
+    position: fixed;
+}
+#asset-panel, #alerts-panel {
+    z-index: 1202 !important;
+}
